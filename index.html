@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Piyush Kadak | Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.typing {
+    font-size: 20px;
+    border-right: 3px solid white;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: auto;
+    animation: typing 3s steps(30, end) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 300px }
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+
+.card:nth-child(3) { animation-delay: 1s; }
+.card:nth-child(5) { animation-delay: 2s; }
+.card:nth-child(7) { animation-delay: 3s; }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button {
+    background: white;
+    color: #243b55;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ddd;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Piyush Kadak 👋</h1>
+<div class="typing">Aspiring Data Analyst | Python | SQL | Excel</div>
+
+<h2>About Me</h2>
+<div class="card">
+<p>I am passionate about analyzing data and discovering meaningful insights. I enjoy working with real-world datasets and building projects.</p>
+</div>
+
+<h2>Skills</h2>
+<div class="card">
+<p>✔ Python<br>
+✔ SQL<br>
+✔ Excel<br>
+✔ Power BI</p>
+</div>
+
+<h2>Projects</h2>
+<div class="card">
+<p><b>IPL Data Analysis Project</b><br>
+Analyzed match data to identify top performers and trends.</p>
+</div>
+
+<h2>Contact</h2>
+<div class="card">
+<p>Email: yourname@gmail.com</p>
+<button onclick="alert('Thank you for visiting!')">Say Hello</button>
+</div>
+
+</div>
+
+</body>
+</html>
